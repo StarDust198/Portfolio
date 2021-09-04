@@ -15,12 +15,15 @@
             width: 100%;
         }
     }
-    &__subtitle {
+    &__title {
         margin-top: 5px;
         @include before_circle;
     }
-    &__title {
+    &__subtitle {
         margin-bottom: 0;
+    }
+    .divider {
+        margin: 0;
     }
     &__descr {
         margin: 20px 0 0;

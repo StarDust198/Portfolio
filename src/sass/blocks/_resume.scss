@@ -1,0 +1,95 @@
+.resume {
+    padding-top: 120px;
+    &__title {
+        text-align: center;
+        @include before_circle;
+        &::before {
+            left: 50%;
+            transform: translateX(-35%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        padding: 60px 65px 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,  425px);
+        grid-auto-rows: minmax(378px, auto);
+        column-gap: 136px;
+    }
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 0;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: $main-color;
+                border-radius: 50%;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+            }
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            li {
+                position: relative;
+                padding-left: 50px;
+                &::after {
+                    content: '';
+                    width: 1px;
+                    height: calc(100% + 8px);                    
+                    position: absolute;
+                    top: -8px;
+                    left: 7px;
+                    background-color: #000;
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &::before {
+            content: '';
+            height: 1px;
+            width: 44px;
+            position: absolute;
+            background-color: #000;
+            left: 8px;
+            top: 64px;
+        }
+        &-head {
+            padding: 45px 0 0 56px;
+            position: relative;
+        }
+        &-icon {
+            @include before_circle;
+            position: absolute;
+            &::before {
+                top: 0;
+                left: -55px;
+            }
+            img {
+                position: absolute;
+                left: -39px;
+                top: 13px;
+            }
+        }
+        &-subtitle {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-body {
+            margin-top: 12px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
