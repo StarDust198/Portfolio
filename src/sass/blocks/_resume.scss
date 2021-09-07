@@ -1,24 +1,18 @@
 .resume {
-    padding-top: 120px;
-    &__title {
-        text-align: center;
-        @include before_circle;
-        &::before {
-            left: 50%;
-            transform: translateX(-35%);
-        }
-    }
-    &__subtitle {
-        text-align: center;
+    @include center_header;
+    .divider {
+        margin-bottom: 0;
     }
     &__wrapper {
-        padding: 60px 65px 0;
+        padding: 0 65px;
         display: grid;
         grid-template-columns: repeat(auto-fit,  425px);
         grid-auto-rows: minmax(378px, auto);
         column-gap: 136px;
+        justify-content: center;
     }
     &__column {
+        margin-top: 60px;
         &-title {
             position: relative;
             padding-left: 50px;

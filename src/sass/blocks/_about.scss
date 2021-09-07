@@ -17,6 +17,7 @@
     }
     &__title {
         margin-top: 5px;
+        padding-left: 12px;
         @include before_circle;
     }
     &__subtitle {

@@ -5,6 +5,8 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
     margin: 0;
     padding: 0;
 }
@@ -28,6 +30,9 @@
 @import "blocks/menu";
 @import "blocks/about";
 @import "blocks/resume";
+@import "blocks/skills";
+@import "blocks/portfolio";
+@import "blocks/prices";
 
 
 @media (max-width: 1440px) {
