@@ -7,7 +7,8 @@
         width: 535px;
         margin-top: 10px;
     }
-    &__subtitle {
+    &__title {
+        padding-left: 12px;
         @include before_circle;
     }
     &__btns {

@@ -36,7 +36,7 @@
     &__progress {
         padding-top: 126px;
         display: grid;
-        grid-template-columns: repeat(auto-fit,  minmax(300px, 350px));
+        grid-template-columns: repeat(3,minmax(285px,350px));
         grid-template-rows: 70px;
         grid-auto-rows: 70px;
         gap: 38px 45px;
